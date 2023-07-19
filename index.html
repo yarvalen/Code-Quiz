@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>JavaScript Quiz</title>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1 style="text-align:center;">JavaScript Quiz</h1>
+            <!-- <div class="tile"> -->
+            <h2 style="text-align:center;">Test your JS knowlegde. Click start to begin timed quiz!</h2>
+            <h2 style="text-align:center;">If answered incorrectly, your time will be reduced.</h2>
+        </div>
+    </header>
+
+    <main>
+        <section class="display-absolute">
+            <div id="HighScore">
+                <p>High Score</p>
+            </div>
+            <div id="timerDisplay">
+                <p id="time">Timer: 180</p>
+            </div>
+        </section>
+        <h1 id="question">
+        </h1>
+
+        <section id="options">
+
+
+            <!-- <button class="choice">Answer A</button>
+                <button class="choice">Answer B</button>
+                <button class="choice">Answer C</button>
+                <button class="choice">Answer D</button> -->
+            <!-- <div class="correct"> Correct &#x2714;</div> -->
+        </section>
+        <div>
+            <p class="hide correct-message">Correct! &#x2713</p>
+            <p class="hide wrong-message">Wrong! &#x2715</p>
+        </div>
+        <!-- function to this btn -->
+
+        <div class="controls">
+            <button id="startquizEl" class="start-btn btn">Start</button>
+
+            <button id="next" class="next-btn btn hide">Next</button>
+        </div>
+
+        <div class="result"></div>
+        <section class=" hide save results">
+            <label for="textboxInitials">Add your initials </label>
+            <textarea id="initialArea" name="Add your initials" maxlength="4" minlength="1"></textarea>
+            <button id="submit-btn">Submit</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

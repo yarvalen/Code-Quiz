@@ -1,0 +1,78 @@
+.hide {
+    display: none
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+head {
+    display: flexbox;
+    justify-content: right;
+    padding: 0.5%;
+    background-color: #96b9da;
+    border-radius: 15px;
+    color: rgb(13, 12, 13);
+}
+
+header {
+    /* display: flex;
+        justify-content: flex-end; */
+    padding: 0.5%;
+    background-color: #96b9da;
+    border-radius: 15px;
+    color: rgb(13, 12, 13);
+}
+
+/* body {
+        display: flex;
+        flex-direction: column; 
+        align-items: stretch;
+        line-height: 2;
+        font-size: large;
+      } */
+
+body {
+    padding: 10;
+    margin: 40;
+    display: flex;
+    flex-direction: column;
+}
+
+.display-absolute {
+    display: flex;
+    justify-content: space-between;
+}
+
+.display-absolute #HighScore {
+    justify-content: end;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+
+}
+
+.view-highscore {
+    background-color: antiquewhite;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.highscore-button {
+    font-size: 15px;
+    height: 50%;
+    line-height: 0.5em;
+}
+
+.highscore-button:hover {
+    background-color: var(--lightblue);
+    color: var(--white);
+}
+
+.the-timer {
+    border: 15px solid black;
+}
